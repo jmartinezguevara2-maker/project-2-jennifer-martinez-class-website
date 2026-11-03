@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Browse a gallery of vintage Betty Boop inspired cartoon artwork.">
+  <title>Betty Boop | Gallery</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <div class="site-shell">
+    <header class="site-header">
+      <a class="logo" aria-label="Betty Boop home">
+        <span>Betty<span class="logo-hearts">♥</span></span>
+        <span class="logo-second">♥ Boop</span>
+      </a>
+      <div class="header-note">
+        <span class="header-star" aria-hidden="true">✦</span>
+      </div>
+      <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="film.html">Film Information</a>
+        <a class="active" href="gallery.html">Gallery</a>
+      </nav>
+    </header>
+
+    <div class="divider-bar"></div>
+
+    <main class="gallery-page">
+      <p class="eyebrow">A collection of cartoon memories</p>
+      <h1 class="display-title">Gallery Show</h1>
+      <p class="intro-copy">Exploring the character art, and vintage-inspired moments. Select an image to view it larger.</p>
+      <div class="full-gallery">
+        <figure class="gallery-card">
+          <button class="gallery-image-button" data-full-image="images/feature-1930.jpg" aria-label="Enlarge 1930 feature image"><img src="images/feature-1930.jpg" alt="Vintage 1930s cartoon artwork"></button>
+          <figcaption><strong>1930 · The early years</strong><span>Classic animation style</span></figcaption>
+        </figure>
+        <figure class="gallery-card">
+          <button class="gallery-image-button" data-full-image="images/gallery-car.jpg" aria-label="Enlarge red car cartoon image"><img src="images/gallery-car.jpg" alt="Color cartoon scene with a red car"></button>
+          <figcaption><strong>On the big screen</strong><span>Color and movement</span></figcaption>
+        </figure>
+        <figure class="gallery-card">
+          <button class="gallery-image-button" data-full-image="images/gallery-portrait.jpg" aria-label="Enlarge portrait image"><img src="images/gallery-portrait.jpg" alt="Black and white cartoon portrait"></button>
+          <figcaption><strong>Character portrait</strong><span>Expressions and design</span></figcaption>
+        </figure>
+        <figure class="gallery-card">
+          <button class="gallery-image-button" data-full-image="images/gallery-cartoon.jpg" aria-label="Enlarge black and white cartoon scene"><img src="images/gallery-cartoon.jpg" alt="Black and white cartoon scene"></button>
+          <figcaption><strong>Animation memories</strong><span>A look at the past</span></figcaption>
+        </figure>
+        <figure class="gallery-card">
+          <button class="gallery-image-button" data-full-image="images/gallery-cafe.jpg" aria-label="Enlarge cafe cartoon image"><img src="images/gallery-cafe.jpg" alt="Color cartoon scene in a cafe"></button>
+          <figcaption><strong>Style through the years</strong><span>Vintage-inspired details</span></figcaption>
+        </figure>
+      </div>
+
+    
+    </main>
+
+    <footer class="site-footer">
+      <p>2026 Betty Boop Project </p>
+      <a href="fleischerstudios@fleischerstudios.com">Send an email</a>
+    </footer>
+  </div>
+
+  <div class="lightbox" hidden role="dialog" aria-modal="true" aria-label="Expanded gallery image">
+    <button class="lightbox-close" aria-label="Close enlarged image">×</button>
+    <img src="" alt="">
+  </div>
+</body>
+</html>
